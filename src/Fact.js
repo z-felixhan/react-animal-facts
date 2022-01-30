@@ -15,11 +15,13 @@ const Fact = () => {
     fetchFacts();
   }, []);
 
+  const { name, latin_name, animal_type } = fact;
+
   return (
     <article className="review">
-      <h4 className="author">{fact.name}</h4>
-      <p className="job">{fact.latin_name}</p>
-      <p className="info">{fact.animal_type}</p>
+      <h4 className="author">{name}</h4>
+      <p className="job">{latin_name}</p>
+      <p className="info">{animal_type}</p>
     </article>
   );
 };
