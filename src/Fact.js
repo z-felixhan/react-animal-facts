@@ -15,7 +15,16 @@ const Fact = () => {
     fetchFacts();
   }, []);
 
-  const { animal_type, image_link, latin_name, name } = fact;
+  const {
+    active_time,
+    animal_type,
+    diet,
+    geo_range,
+    habitat,
+    image_link,
+    latin_name,
+    name,
+  } = fact;
 
   return (
     <article className="review">
@@ -24,7 +33,11 @@ const Fact = () => {
       </div>
       <h4 className="author">{name}</h4>
       <p className="job">{latin_name}</p>
+      <p className="info">{active_time}</p>
       <p className="info">{animal_type}</p>
+      <p className="info">{diet}</p>
+      <p className="info">{geo_range}</p>
+      <p className="info">{habitat}</p>
     </article>
   );
 };
