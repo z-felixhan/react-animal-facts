@@ -33,11 +33,26 @@ const Fact = () => {
       </div>
       <h4 className="author">{name}</h4>
       <p className="job">{latin_name}</p>
-      <p className="info">{active_time}</p>
-      <p className="info">{animal_type}</p>
-      <p className="info">{diet}</p>
-      <p className="info">{geo_range}</p>
-      <p className="info">{habitat}</p>
+      <p className="info">
+        <span className="fact-data">Active Time :</span>
+        {active_time}
+      </p>
+      <p className="info">
+        <span className="fact-data">Animal Type :</span>
+        {animal_type}
+      </p>
+      <p className="info">
+        <span className="fact-data">Diet :</span>
+        {diet}
+      </p>
+      <p className="info">
+        <span className="fact-data">Geo Range :</span>
+        {geo_range}
+      </p>
+      <p className="info">
+        <span className="fact-data">Habitat :</span>
+        {habitat}
+      </p>
     </article>
   );
 };
