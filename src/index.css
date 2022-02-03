@@ -5,6 +5,11 @@ Variables
 */
 
 :root {
+  --primaryLightColor: #d4e6a5;
+  --primaryColor: #476a2e;
+  --primaryDarkColor: #c02c03;
+  --mainBorderRadius: 0.25rem;
+
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
   --clr-primary-2: hsl(205, 77%, 27%);
@@ -220,6 +225,7 @@ main {
 }
 .info {
   margin-bottom: 0.75rem;
+  text-transform: uppercase;
 }
 .prev-btn,
 .next-btn {
@@ -249,4 +255,10 @@ main {
 .random-btn:hover {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
+}
+.fact-data {
+  background: var(--primaryLightColor);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--mainBorderRadius);
+  color: var(--primaryColor);
 }
