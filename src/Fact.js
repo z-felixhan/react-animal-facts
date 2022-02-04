@@ -15,16 +15,7 @@ const Fact = () => {
     fetchFacts();
   }, []);
 
-  const {
-    active_time,
-    animal_type,
-    diet,
-    geo_range,
-    habitat,
-    image_link,
-    latin_name,
-    name,
-  } = fact;
+  const { image_link, latin_name, name } = fact;
 
   return (
     <article className="review">
@@ -33,26 +24,22 @@ const Fact = () => {
       </div>
       <h4 className="author">{name}</h4>
       <p className="job">{latin_name}</p>
-      <p className="info">
-        <span className="fact-data">Active Time :</span>
-        {active_time}
-      </p>
-      <p className="info">
-        <span className="fact-data">Animal Type :</span>
-        {animal_type}
-      </p>
-      <p className="info">
-        <span className="fact-data">Diet :</span>
-        {diet}
-      </p>
-      <p className="info">
-        <span className="fact-data">Geo Range :</span>
-        {geo_range}
-      </p>
-      <p className="info">
-        <span className="fact-data">Habitat :</span>
-        {habitat}
-      </p>
+      {Object.keys(fact).map((key, i) => {
+        if (
+          key !== "id" &&
+          key !== "image_link" &&
+          key !== "latin_name" &&
+          key !== "name"
+        ) {
+          return (
+            <div key={i} className="info">
+              <span className="fact-data">{key} :</span> {fact[key]}
+            </div>
+          );
+        }
+
+        return false;
+      })}
     </article>
   );
 };
