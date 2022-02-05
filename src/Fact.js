@@ -29,7 +29,11 @@ const Fact = () => {
           key !== "id" &&
           key !== "image_link" &&
           key !== "latin_name" &&
-          key !== "name"
+          key !== "length_max" &&
+          key !== "length_min" &&
+          key !== "name" &&
+          key !== "weight_max" &&
+          key !== "weight_min"
         ) {
           return (
             <div key={i} className="info">
