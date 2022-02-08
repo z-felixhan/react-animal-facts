@@ -5,7 +5,7 @@ function App() {
     <main>
       <section className="container">
         <div className="title">
-          <h2>Random Facts</h2>
+          <h2>Random Animal Facts</h2>
           <div className="underline"></div>
         </div>
         <Fact />
