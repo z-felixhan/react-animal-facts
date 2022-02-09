@@ -183,7 +183,7 @@ main {
   margin: 0 auto;
   margin-bottom: 1.5rem;
 }
-.person-img {
+.animal-img {
   width: 100%;
   display: block;
   height: 100%;
@@ -214,10 +214,10 @@ main {
   right: -0.5rem;
   border-radius: 50%;
 }
-.author {
+.name {
   margin-bottom: 0.25rem;
 }
-.job {
+.latin-name {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   color: var(--clr-primary-5);
@@ -225,6 +225,7 @@ main {
 }
 .info {
   margin-bottom: 0.75rem;
+  text-align: left;
   text-transform: uppercase;
 }
 .prev-btn,
