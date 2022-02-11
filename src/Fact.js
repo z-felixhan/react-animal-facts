@@ -20,10 +20,10 @@ const Fact = () => {
   return (
     <article className="review">
       <div className="img-container">
-        <img className="person-img" src={image_link} alt="" />
+        <img className="animal-img" src={image_link} alt="" />
       </div>
-      <h4 className="author">{name}</h4>
-      <p className="job">{latin_name}</p>
+      <h4 className="name">{name}</h4>
+      <p className="latin-name">{latin_name}</p>
       {Object.keys(fact).map((key, i) => {
         if (
           key !== "id" &&
