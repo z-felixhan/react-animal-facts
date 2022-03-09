@@ -37,7 +37,8 @@ const Fact = () => {
         ) {
           return (
             <div key={i} className="info">
-              <span className="fact-data">{key} :</span> {fact[key]}
+              <span className="fact-data">{key.replace(/_/g, " ")} :</span>{" "}
+              {fact[key]}
             </div>
           );
         }
