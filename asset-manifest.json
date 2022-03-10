@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-animal-facts/static/css/main.5be0b759.chunk.css",
-    "main.js": "/react-animal-facts/static/js/main.5c9aeff5.chunk.js",
-    "main.js.map": "/react-animal-facts/static/js/main.5c9aeff5.chunk.js.map",
+    "main.js": "/react-animal-facts/static/js/main.648932f7.chunk.js",
+    "main.js.map": "/react-animal-facts/static/js/main.648932f7.chunk.js.map",
     "runtime-main.js": "/react-animal-facts/static/js/runtime-main.c389cf9e.js",
     "runtime-main.js.map": "/react-animal-facts/static/js/runtime-main.c389cf9e.js.map",
     "static/js/2.54f99150.chunk.js": "/react-animal-facts/static/js/2.54f99150.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c389cf9e.js",
     "static/js/2.54f99150.chunk.js",
     "static/css/main.5be0b759.chunk.css",
-    "static/js/main.5c9aeff5.chunk.js"
+    "static/js/main.648932f7.chunk.js"
   ]
 }
