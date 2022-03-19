@@ -45,6 +45,9 @@ const Fact = () => {
 
         return false;
       })}
+      <button className="random-btn" onClick={() => fetchFacts()}>
+        Surprise Me
+      </button>
     </article>
   );
 };
